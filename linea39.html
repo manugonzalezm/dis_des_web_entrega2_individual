@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Línea 39 – Centro de Transporte Inteligente CABA</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="linea39.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container py-4">
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <div class="badge-linea">39</div>
+        <div>
+          <p class="mb-0 text-warning fw-semibold small text-uppercase">Centro de Transporte Inteligente – CABA</p>
+          <h1 class="mb-0 fs-3 fw-bold">Línea 39</h1>
+          <p class="mb-0 opacity-75">Chacarita ↔ Constitución &nbsp;|&nbsp; Transportes Santa Fe S.A.C.E.I.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#002d7a;">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link" href="#servicio">Servicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paradas">Paradas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#accesibilidad">Accesibilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SERVICIO -->
+  <section id="servicio">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-bus-front me-2"></i>Información del servicio</h2>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <p>
+            La <strong>Línea 39</strong> es una de las líneas de colectivo urbano de la Ciudad Autónoma de Buenos Aires,
+            operada por <strong>Transportes Santa Fe S.A.C.E.I.</strong> Conecta los barrios de
+            <strong>Chacarita</strong> y <strong>Constitución</strong> atravesando zonas de alta demanda
+            como Palermo, Villa Crespo, el Microcentro y Barracas.
+          </p>
+          <p>
+            El servicio opera las <strong>24 horas, los 365 días del año</strong>, con alta frecuencia en
+            horas pico. Cuenta con tres ramales principales (R1, R2 y R3) con variantes de recorrido
+            que permiten cubrir distintos sectores de la ciudad.
+          </p>
+          <div class="row g-3 mt-1">
+            <div class="col-sm-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h6 class="card-title text-primary fw-bold"><i class="bi bi-geo-alt me-1"></i>Terminales</h6>
+                  <p class="mb-1"><strong>Inicio:</strong> Terminal Chacarita</p>
+                  <p class="mb-0"><strong>Final:</strong> Plaza Constitución / Barracas</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h6 class="card-title text-primary fw-bold"><i class="bi bi-signpost-split me-1"></i>Destinos principales</h6>
+                  <ul class="mb-0 ps-3">
+                    <li>Chacarita</li>
+                    <li>Villa Crespo / Palermo</li>
+                    <li>Microcentro / Obelisco</li>
+                    <li>Monserrat / San Telmo</li>
+                    <li>Constitución / Barracas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h6 class="card-title text-primary fw-bold"><i class="bi bi-info-circle me-1"></i>Datos rápidos</h6>
+              <table class="table table-sm table-borderless mb-0">
+                <tbody>
+                  <tr><td class="text-muted">Empresa</td><td><strong>Transportes Santa Fe</strong></td></tr>
+                  <tr><td class="text-muted">Ramales</td><td><strong>R1 · R2 · R3</strong></td></tr>
+                  <tr><td class="text-muted">Paradas</td><td><strong>~35 por ramal</strong></td></tr>
+                  <tr><td class="text-muted">Duración</td><td><strong>35 – 45 min</strong></td></tr>
+                  <tr><td class="text-muted">Tarifa</td><td><strong>$1.000</strong></td></tr>
+                  <tr><td class="text-muted">Horario</td><td><strong>24 hs / 365 días</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARADAS -->
+  <section id="paradas">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-pin-map me-2"></i>Paradas principales – Ramal R1</h2>
+      <p class="text-muted mb-4">Recorrido completo: <strong>Chacarita → Plaza Italia → Microcentro → Constitución</strong></p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <ul class="stop-list">
+            <li>
+              <div class="stop-dot terminal"></div>
+              <div>
+                <strong>Terminal Chacarita</strong>
+                <div class="text-muted small">Av. Corrientes 6500 – Cabecera Norte</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Corrientes y Dorrego</strong>
+                <div class="text-muted small">Chacarita / Villa Crespo</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Corrientes y Scalabrini Ortiz</strong>
+                <div class="text-muted small">Villa Crespo</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Plaza Italia</strong>
+                <div class="text-muted small">Av. Santa Fe y Las Heras – Palermo</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Santa Fe y Pueyrredón</strong>
+                <div class="text-muted small">Recoleta</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Santa Fe y Coronel Díaz</strong>
+                <div class="text-muted small">Recoleta</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Santa Fe y Callao</strong>
+                <div class="text-muted small">Barrio Norte</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="stop-list">
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Santa Fe y Uruguay</strong>
+                <div class="text-muted small">Centro</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Florida y Charcas</strong>
+                <div class="text-muted small">Microcentro Norte</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Florida y Corrientes (Obelisco)</strong>
+                <div class="text-muted small">Microcentro – nodo de transferencia</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Belgrano y Bernardo de Irigoyen</strong>
+                <div class="text-muted small">Monserrat</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Independencia y Lima</strong>
+                <div class="text-muted small">San Telmo</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot"></div>
+              <div>
+                <strong>Av. Brasil y Salta</strong>
+                <div class="text-muted small">Constitución</div>
+              </div>
+            </li>
+            <li>
+              <div class="stop-dot terminal"></div>
+              <div>
+                <strong>Plaza Constitución</strong>
+                <div class="text-muted small">Cabecera Sur – Interconexión Tren, Subte</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="alert alert-info mt-3 mb-0 d-flex align-items-center gap-2">
+        <i class="bi bi-info-circle-fill fs-5"></i>
+        <span>Los ramales <strong>R2</strong> (por Colegiales) y <strong>R3</strong> (por Palermo Hollywood) tienen recorridos alternativos con paradas propias. Consultá el mapa interactivo para ver todas las variantes.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mapa">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-map me-2"></i>Mapa del recorrido</h2>
+      <p class="text-muted mb-3">Recorrido aproximado del Ramal R1 entre Chacarita y Constitución.</p>
+      <div class="map-frame">
+        <iframe
+          title="Mapa recorrido Línea 39 Buenos Aires"
+          src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26286.78219938629!2d-58.43896!3d-34.60500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x95bcb5d85b54cc81%3A0xf9c27f3f9d7cdde2!2sChacarita%2C%20Buenos%20Aires!3m2!1d-34.5863!2d-58.4567!4m5!1s0x95a33520ef2d4ba3%3A0x8cdff1f44ed36b6d!2sPlaza%20Constituci%C3%B3n%2C%20Buenos%20Aires!3m2!1d-34.6268!2d-58.3813!5e0!3m2!1ses!2sar!4v1700000000000"
+          width="100%"
+          height="420"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="text-muted small mt-2"><i class="bi bi-info-circle me-1"></i>El mapa muestra la zona general del recorrido. Para el trazado exacto, consultá <a href="https://www.buenosaires.gob.ar/infraestructura/colectivos/linea-39" target="_blank">BA Colectivos</a>.</p>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section id="horarios">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-clock me-2"></i>Horarios y frecuencias</h2>
+      <p class="text-muted mb-4">El servicio opera las <strong>24 horas</strong>. La frecuencia varía según la franja horaria.</p>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <caption class="text-muted small">Frecuencia estimada por franja horaria – Lunes a Viernes</caption>
+              <thead>
+                <tr>
+                  <th>Franja horaria</th>
+                  <th>Frecuencia</th>
+                  <th>Primer salida</th>
+                  <th>Última salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Madrugada <span class="text-muted small">(00:00 – 05:59)</span></td>
+                  <td><span class="badge bg-secondary">Cada 20 – 30 min</span></td>
+                  <td>00:00</td>
+                  <td>05:50</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>Pico mañana <span class="text-muted small">(06:00 – 09:59)</span></td>
+                  <td><span class="badge bg-success">Cada 5 – 8 min</span></td>
+                  <td>06:00</td>
+                  <td>09:55</td>
+                </tr>
+                <tr>
+                  <td>Mediodía <span class="text-muted small">(10:00 – 16:59)</span></td>
+                  <td><span class="badge bg-primary">Cada 10 – 12 min</span></td>
+                  <td>10:00</td>
+                  <td>16:50</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>Pico tarde <span class="text-muted small">(17:00 – 20:59)</span></td>
+                  <td><span class="badge bg-success">Cada 5 – 8 min</span></td>
+                  <td>17:00</td>
+                  <td>20:55</td>
+                </tr>
+                <tr>
+                  <td>Noche <span class="text-muted small">(21:00 – 23:59)</span></td>
+                  <td><span class="badge bg-secondary">Cada 12 – 18 min</span></td>
+                  <td>21:00</td>
+                  <td>23:45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h6 class="card-title fw-bold text-primary"><i class="bi bi-calendar3 me-1"></i>Fines de semana y feriados</h6>
+              <ul class="mb-3 ps-3">
+                <li>Sábados: frecuencia reducida aprox. <strong>30%</strong></li>
+                <li>Domingos y feriados: frecuencia reducida aprox. <strong>40%</strong></li>
+                <li>El servicio <strong>no se interrumpe</strong> en ningún día del año</li>
+              </ul>
+              <h6 class="card-title fw-bold text-primary mt-3"><i class="bi bi-credit-card me-1"></i>Medios de pago</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary fs-6 px-3 py-2"><i class="bi bi-credit-card-2-front me-1"></i>SUBE</span>
+                <span class="badge bg-primary fs-6 px-3 py-2"><i class="bi bi-wifi me-1"></i>NFC</span>
+                <span class="badge bg-primary fs-6 px-3 py-2"><i class="bi bi-credit-card me-1"></i>Tarjetas</span>
+                <span class="badge bg-primary fs-6 px-3 py-2"><i class="bi bi-qr-code me-1"></i>QR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESIBILIDAD -->
+  <section id="accesibilidad">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-universal-access me-2"></i>Accesibilidad</h2>
+      <p class="text-muted mb-4">La Línea 39 incorpora criterios de accesibilidad universal para garantizar que todas las personas puedan utilizar el servicio.</p>
+      <h5 class="fw-bold mb-3 mt-2" style="color: var(--color-primario);">En los colectivos de la línea</h5>
+      <div class="row g-3 mb-4">
+        <div class="col-sm-6">
+          <div class="card accesibilidad-card h-100 border shadow-sm p-1">
+            <div class="card-body">
+              <h6 class="fw-bold"><i class="bi bi-sign-merge-right text-primary me-2"></i>Rampas de acceso</h6>
+              <p class="mb-0 text-muted small">Todas las unidades de la Línea 39 cuentan con rampa abatible en la puerta delantera para facilitar el ascenso y descenso de personas con movilidad reducida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card accesibilidad-card h-100 border shadow-sm p-1">
+            <div class="card-body">
+              <h6 class="fw-bold"><i class="bi bi-person-wheelchair text-primary me-2"></i>Espacios para silla de ruedas</h6>
+              <p class="mb-0 text-muted small">Cada unidad dispone de un sector reservado y señalizado para personas en silla de ruedas y cochecitos, con agarraderas de apoyo y fijación segura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 mt-0">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6">
+          <p class="mb-1 fw-semibold text-white">Centro de Transporte Inteligente – CABA</p>
+          <p class="mb-0">Página individual: <strong class="text-warning">Línea 39</strong></p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">Fuentes: <a href="https://buenosaires.gob.ar/infraestructura/colectivos/linea-39" target="_blank">BA Ciudad</a> · <a href="https://tucolectivo.info/39" target="_blank">TuColectivo</a></p>
+          <p class="mb-0 opacity-75 small">Proyecto académico – Diseño y Desarrollo Web · UADE 2026</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
