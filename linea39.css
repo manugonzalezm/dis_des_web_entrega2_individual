@@ -1,0 +1,112 @@
+:root {
+  --color-primario: #003DA5;   /* azul institucional CABA */
+  --color-secundario: #FBBF24;
+  --color-fondo: #F8F9FA;
+  --color-texto: #212529;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+}
+
+/* --- HEADER --- */
+header {
+  background-color: var(--color-primario);
+  color: #fff;
+}
+
+.badge-linea {
+  background-color: var(--color-secundario);
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* --- SECCIÓN --- */
+section {
+  padding: 2rem 0;
+}
+
+section:nth-of-type(even) {
+  background-color: #e9ecef;
+}
+
+.section-title {
+  color: var(--color-primario);
+  font-weight: 700;
+  border-left: 5px solid var(--color-secundario);
+  padding-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- PARADAS --- */
+.stop-list {
+  list-style: none;
+  padding: 0;
+}
+
+.stop-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.stop-list li:last-child {
+  border-bottom: none;
+}
+
+.stop-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.stop-dot.terminal {
+  background-color: var(--color-secundario);
+  border: 2px solid #000;
+}
+
+/* --- MAPA --- */
+.map-frame {
+  border: 3px solid var(--color-primario);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* --- HORARIOS --- */
+.table thead {
+  background-color: var(--color-primario);
+  color: #fff;
+}
+
+/* --- ACCESIBILIDAD --- */
+.accesibilidad-card {
+  border-left: 4px solid var(--color-primario);
+  background-color: #fff;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: var(--color-primario);
+  color: #cdd7ef;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: var(--color-secundario);
+}
