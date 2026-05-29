@@ -24,7 +24,7 @@
         <div>
           <p class="mb-0 text-warning fw-semibold small text-uppercase">Centro de Transporte Inteligente – CABA</p>
           <h1 class="mb-0 fs-3 fw-bold">Línea 39</h1>
-          <p class="mb-0 opacity-75">Chacarita ↔ Constitución &nbsp;|&nbsp; Transportes Santa Fe S.A.C.E.I.</p>
+          <p class="mb-0 opacity-75">Chacarita ↔ Constitución | Transportes Santa Fe S.A.C.E.I.</p>
         </div>
       </div>
     </div>
@@ -38,9 +38,6 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navMenu"
-        aria-controls="navMenu"
-        aria-expanded="false"
-        aria-label="Abrir menú"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,6 +52,48 @@
       </div>
     </div>
   </nav>
+
+  <!-- CARRUSEL -->
+  <div id="carruselLinea39" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselLinea39" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carruselLinea39" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carruselLinea39" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carruselLinea39" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner" style="max-height: 460px; overflow: hidden;">
+      <div class="carousel-item active">
+        <img src="img/linea39-1.jpg" class="d-block w-100 object-fit-cover" style="max-height:460px;" alt="Colectivo de la Línea 39 circulando por una calle de Buenos Aires">
+        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px; padding: 8px 16px;">
+          <h5 class="mb-0">Línea 39 en servicio</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/linea39-2.jpg" class="d-block w-100 object-fit-cover" style="max-height:460px;" alt="Vista frontal de un colectivo de la Línea 39 en Buenos Aires">
+        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px; padding: 8px 16px;">
+          <h5 class="mb-0">Frente característico de la línea</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/linea39-3.jpg" class="d-block w-100 object-fit-cover" style="max-height:460px;" alt="Interior de uno de los colectivos de la Línea 39, interno número 8">
+        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px; padding: 8px 16px;">
+          <h5 class="mb-0">Interno #8 – flota Mercedes-Benz</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/linea39-4.jpg" class="d-block w-100 object-fit-cover" style="max-height:460px;" alt="Colectivo de la Línea 39 con el homenaje a Carlitos Balá en la luneta trasera">
+        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px; padding: 8px 16px;">
+          <h5 class="mb-0">Homenaje a Carlitos Balá, el pasajero más famoso</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselLinea39" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselLinea39" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
   <!-- SERVICIO -->
   <section id="servicio">
@@ -247,7 +286,6 @@
       <p class="text-muted mb-3">Recorrido aproximado del Ramal R1 entre Chacarita y Constitución.</p>
       <div class="map-frame">
         <iframe
-          title="Mapa recorrido Línea 39 Buenos Aires"
           src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26286.78219938629!2d-58.43896!3d-34.60500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x95bcb5d85b54cc81%3A0xf9c27f3f9d7cdde2!2sChacarita%2C%20Buenos%20Aires!3m2!1d-34.5863!2d-58.4567!4m5!1s0x95a33520ef2d4ba3%3A0x8cdff1f44ed36b6d!2sPlaza%20Constituci%C3%B3n%2C%20Buenos%20Aires!3m2!1d-34.6268!2d-58.3813!5e0!3m2!1ses!2sar!4v1700000000000"
           width="100%"
           height="420"
@@ -269,8 +307,7 @@
         <div class="col-lg-7">
           <div class="table-responsive">
             <table class="table table-bordered table-hover align-middle">
-              <caption class="text-muted small">Frecuencia estimada por franja horaria – Lunes a Viernes</caption>
-              <thead>
+<thead>
                 <tr>
                   <th>Franja horaria</th>
                   <th>Frecuencia</th>
@@ -341,6 +378,9 @@
     <div class="container">
       <h2 class="section-title"><i class="bi bi-universal-access me-2"></i>Accesibilidad</h2>
       <p class="text-muted mb-4">La Línea 39 incorpora criterios de accesibilidad universal para garantizar que todas las personas puedan utilizar el servicio.</p>
+      <div class="mb-4">
+        <img src="img/linea39-3.jpg" class="img-fluid rounded" style="max-height:260px; width:100%; object-fit:cover;" alt="Vista del interior de un colectivo de la Línea 39 con sus asientos y espacio central">
+      </div>
       <h5 class="fw-bold mb-3 mt-2" style="color: var(--color-primario);">En los colectivos de la línea</h5>
       <div class="row g-3 mb-4">
         <div class="col-sm-6">
@@ -373,7 +413,7 @@
         </div>
         <div class="col-md-6 text-md-end">
           <p class="mb-1">Fuentes: <a href="https://buenosaires.gob.ar/infraestructura/colectivos/linea-39" target="_blank">BA Ciudad</a> · <a href="https://tucolectivo.info/39" target="_blank">TuColectivo</a></p>
-          <p class="mb-0 opacity-75 small">Proyecto académico – Diseño y Desarrollo Web · UADE 2026</p>
+          <p class="mb-0 opacity-75 small">Diseño y Desarrollo Web · UADE 2026</p>
         </div>
       </div>
     </div>
